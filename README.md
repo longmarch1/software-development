@@ -2,6 +2,13 @@
 
 ## Agile Software Development
 
+- **Individuals and interactions** over processes and tools
+- **Working software** over comprehensive documentation
+- **Customer collaboration** over contract negotiation
+- **Responding to change** over following a plan
+
+That is, while there is value in the items on
+the right, we value the items on the left more.
 <http://agilemanifesto.org/>
 
 ## Jim McCarthy 23 Rules of Thumb
@@ -45,7 +52,24 @@
 - Design time at Design TIme
   - Build time into the design
   - Design the product to ship on time
-
+- If you build it, it will ship
+  - Daily build is essential
+  - Daily build is heartbeat
+- Enrapture the customer
+  - Most software sucks
+- Remember one thing: Unity
+  - Unity is analogous to purpose
+  - Everything supports the purpose
+- State your theme
+  - Dominant idea
+  - Eliminate competing values
+  - Surpassing clarity
+  - Software is slow means team is slow
+- Go for scenarios
+  - Make some activity really shine
+- Establish a shared vision
+- Catagorize the content
+  - 
 
 
 <https://scrumage.com/blog/2012/01/jim-mccarthy-23-rules-of-thumb/>
