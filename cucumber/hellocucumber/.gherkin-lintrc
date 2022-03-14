@@ -1,0 +1,20 @@
+{
+    "indentation": [
+        "on",
+        {
+            "Feature": 0,
+            "Background": 0,
+            "Scenario": 4,
+            "Step": 4,
+            "Examples": 8,
+            "example": 12,
+            "given": 8,
+            "when": 8,
+            "then": 8,
+            "and": 8,
+            "but": 8,
+            "feature tag": 0,
+            "scenario tag": 0
+        }
+    ]
+}

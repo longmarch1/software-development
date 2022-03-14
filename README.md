@@ -1,5 +1,10 @@
 # software-development
 
+- [software-development](#software-development)
+  - [Agile Software Development](#agile-software-development)
+  - [Jim McCarthy 23 Rules of Thumb](#jim-mccarthy-23-rules-of-thumb)
+  - [Git Workflow Comparison](#git-workflow-comparison)
+
 ## Agile Software Development
 
 -   **Individuals and interactions** over processes and tools
@@ -71,3 +76,7 @@ the right, we value the items on the left more.
 -   Catagorize the content
 
 <https://scrumage.com/blog/2012/01/jim-mccarthy-23-rules-of-thumb/>
+
+## Git Workflow Comparison
+
+[Git Workflow Comparison](writing/git-workflow-comparison.md)
