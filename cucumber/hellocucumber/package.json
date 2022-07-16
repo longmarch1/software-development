@@ -1,0 +1,17 @@
+{
+    "name": "hellocucumber",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "cucumber-js",
+        "lint": "gherkin-lint ./features/**"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@cucumber/cucumber": "^7.3.2",
+        "gherkin-lint": "^4.2.2"
+    }
+}
