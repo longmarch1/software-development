@@ -4,6 +4,12 @@
   - [Agile Software Development](#agile-software-development)
   - [Jim McCarthy 23 Rules of Thumb](#jim-mccarthy-23-rules-of-thumb)
   - [Git Workflow Comparison](#git-workflow-comparison)
+  - [Sprint Zero](#sprint-zero)
+  - [Tip for successful sprint](#tip-for-successful-sprint)
+  - [Scrum Team Daily (can be manual first but automated later)](#scrum-team-daily-can-be-manual-first-but-automated-later)
+  - [Engineering Practice](#engineering-practice)
+  - [Quality Assurance Use Pair Programming](#quality-assurance-use-pair-programming)
+  - [QA Best Practices](#qa-best-practices)
 
 ## Agile Software Development
 
@@ -80,3 +86,78 @@ the right, we value the items on the left more.
 ## Git Workflow Comparison
 
 [Git Workflow Comparison](writing/git-workflow-comparison.md)
+
+## Sprint Zero
+
+-   Product Vision
+-   Initial Product Backlog
+-   Initial Release Plan
+-   Architecture Approach & Coding Practices
+-   Continuous Integration Environment
+-   Small Product Increment
+
+## Tip for successful sprint
+
+-   sustainable pace
+-   2-3 weeks
+-   identifying the sprint goal (so you can answer what tema is working on without going into backlog)
+
+## Scrum Team Daily (can be manual first but automated later)
+
+-   Developer Tool
+-   Unit Test
+-   Source Control
+-   Continuous Integration
+-   Feature Testing
+
+-   Task board (progress)
+-   Sprint burn down chart (hours vs date)
+-   Open Backlog Item vs date
+
+## Engineering Practice
+
+-   Features Not Frameworks
+    -   Feature Driven instead of Framework driven
+    -   So you can have deliverable at the end of the sprint
+-   YAGNI Principle
+    -   you aren't going to need it
+-   Code Reviews
+    -   Consistent style and name convension
+    -   SOLID principle
+    -   Eslint
+    -   Pattern
+-   Technical Debt
+-   Continuous Integration (automate)
+    -   Continuous Build
+    -   Unit Test
+    -   Integration Test
+    -   Continuous Development
+-   Automated Testing
+    -   Unit Testins (Code coverage)
+    -   Integration Tests (Backend drive)
+    -   Feature Tests (UI focus - record and play back)
+-   Definition of Done
+    -   Code changed
+    -   Tested
+    -   Deployed
+    -   Documented
+
+## Quality Assurance Use Pair Programming
+
+-   QA starts write testing script
+-   Developer write feature code
+
+## QA Best Practices
+
+-   Hire good quality QA Engineers
+-   QA and dev sit together
+-   QA is involved in analysis and design
+-   Test as you go
+-   Test as part of definition of done
+-   Limit your work in progress
+-   Everyone can help test
+-   Frequent, incremental releases for feedback
+-   Set bug queue limits (if it's reached, stop and fix all them)
+
+## Dealing with Bugs
+

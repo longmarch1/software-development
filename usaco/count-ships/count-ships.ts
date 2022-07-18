@@ -2,6 +2,7 @@ const B1 = [
     ["X", ".", ".", "X"],
     [".", ".", ".", "X"],
     [".", ".", ".", "X"],
+    [".", ".", ".", "."],
 ];
 
 function expandBoard(board: string[][]): number[][] {
@@ -64,3 +65,4 @@ function countShips(p1: number[], p2: number[], board: string[][]): number {
 
 console.log(countShips([0, 1], [2, 2], B1));
 console.log(countShips([0, 0], [2, 3], B1));
+console.log(countShips([0, 0], [1, 1], B1));
