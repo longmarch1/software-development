@@ -24,7 +24,7 @@ function isTheSamePosition(point1: number[], point2: number[]) {
     return point1[0] === point2[0] && point1[1] === point2[1];
 }
 
-const BoardLength = 100;
+const BoardLength = 10;
 
 function isPointOutOfBound(point: number[]) {
     return (
@@ -72,7 +72,7 @@ function findPath(
         return false;
     }
 
-    console.log(current);
+    // console.log(current);
     visitedBoard.push(current);
 
     if (isTheSamePosition(current, target)) return true;
@@ -92,5 +92,5 @@ function findPath(
 
 const blocked = [[]],
     source = [0, 0],
-    target = [10, 10];
+    target = [9, 9];
 console.log(isEscapePossible(blocked, source, target));
