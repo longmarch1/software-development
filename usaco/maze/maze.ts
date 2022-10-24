@@ -24,15 +24,8 @@ function isTheSamePosition(point1: number[], point2: number[]) {
     return point1[0] === point2[0] && point1[1] === point2[1];
 }
 
-const BoardLength = 10;
-
-function isPointOutOfBound(point: number[]) {
-    return (
-        point[0] < 0 ||
-        point[0] >= BoardLength ||
-        point[1] < 0 ||
-        point[1] >= BoardLength
-    );
+function isPointOutOfBound(point: number[], max: number) {
+    return point[0] < 0 || point[0] >= max || point[1] < 0 || point[1] >= max;
 }
 
 function isPointOnBoard(point: number[], board: number[][]) {
@@ -55,17 +48,21 @@ function isEscapePossible(
     target: number[]
 ): boolean {
     const visitedBoard = [[]];
-    return findPath(source, target, blocked, visitedBoard);
+    // Set max for 2 points
+    const max = blocked.length ** 2 / 2;
+    console.log(max);
+    return findPath(source, target, blocked, visitedBoard, max);
 }
 
 function findPath(
     current: number[],
     target: number[],
     blockBoard: number[][],
-    visitedBoard: number[][]
+    visitedBoard: number[][],
+    max: number
 ): boolean {
     if (
-        isPointOutOfBound(current) ||
+        isPointOutOfBound(current, max) ||
         isPointOnBoard(current, blockBoard) ||
         isPointOnBoard(current, visitedBoard)
     ) {
@@ -83,14 +80,25 @@ function findPath(
     const right = [current[0] + 1, current[1]];
 
     return (
-        findPath(right, target, blockBoard, visitedBoard) ||
-        findPath(down, target, blockBoard, visitedBoard) ||
-        findPath(left, target, blockBoard, visitedBoard) ||
-        findPath(up, target, blockBoard, visitedBoard)
+        findPath(right, target, blockBoard, visitedBoard, max) ||
+        findPath(down, target, blockBoard, visitedBoard, max) ||
+        findPath(left, target, blockBoard, visitedBoard, max) ||
+        findPath(up, target, blockBoard, visitedBoard, max)
     );
 }
 
-const blocked = [[]],
+const blocked = [
+        [1, 1],
+        [0, 1],
+        [0, 2],
+        [0, 3],
+        [0, 4],
+        [0, 5],
+        [0, 6],
+        [0, 7],
+        [0, 8],
+        [0, 9],
+    ],
     source = [0, 0],
-    target = [9, 9];
+    target = [49, 49];
 console.log(isEscapePossible(blocked, source, target));
